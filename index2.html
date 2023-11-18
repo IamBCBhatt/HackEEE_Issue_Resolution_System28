@@ -1,0 +1,26 @@
+<!-- Store this code in 'login.html' file inside the 'templates' folder -->
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Login </title>
+	</head>
+	<body></br></br></br></br></br>
+				<h1 class="word">ನಿಮ್ಮ ಬಂಧು Login</h1>
+			<h2 class="word">
+				<form action="{{ url_for('login') }}" method="post">
+                  <input id="name" name="name" type="text" placeholder="Enter Your name" class="textbox"/></br></br>
+					<input id="city" name="city" type="text" placeholder="Enter Your city" class="textbox"/></br></br>
+				    <textarea id="complain" name="complain" type="text" rows="5" cols="33">
+                        This is the default comment...
+                    </textarea>
+                   <select name = "dropdown">
+            		<option value = "Water" selected>Water</option>
+            		<option value = "Road"> Road </option>
+            		<option value = "Pollution">Pollution</option>
+				   </select>
+					<input type="submit" class="btn" value="Enter"></br></br>
+				</form>
+			</h2>
+	<h1>{{ msg }}</h1>
+	</body>
+</html>
